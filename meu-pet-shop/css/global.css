@@ -1,0 +1,96 @@
+/*Global--------------------------------------------------------------------------*/
+
+body {
+    margin: 0px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /* background-color: greenyellow; */
+    width: 1350px;
+
+
+}
+
+#titulo1{
+    display: flex;
+    justify-content: center;
+}
+
+/*Categorias depois do titulo acima:*/
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.categorias li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.categorias li:hover {
+    transform: translateY(-8px);
+}
+
+.categorias img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    object-fit: contain;
+}
+
+.categorias li:hover img {
+    box-shadow: 0 8px 20px #00000026;
+    transform: scale(1.05);
+}
+
+.categorias span {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*  cores das elipses */
+.caes img {
+    background-color: #f7cfd6;
+    
+}
+
+.gatos img {
+    background-color: #d6eef7;
+    
+}
+
+.roedores img {
+    background-color: #efe0b0;
+}
+
+.aves img {
+    background-color: #f9d6e5;
+}
+
+.promocoes img {
+    background-color: #d9f0e3;
+}
+
+.vet img {
+    background-color: #f3e6c9;
+}

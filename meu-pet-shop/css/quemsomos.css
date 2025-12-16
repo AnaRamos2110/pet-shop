@@ -1,0 +1,45 @@
+#quem-somos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.quem-somos {
+    background-color: #f7cfd6; /* rosa */
+    padding: 40px;
+}
+
+.atendimento {
+    background-color: #efe0b0; /* bege */
+    padding: 40px;
+}
+
+#quem-somos h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#quem-somos p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#quem-somos ul {
+    padding-left: 18px;
+    margin: 10px 0;
+}
+
+#quem-somos li {
+    margin-bottom: 6px;
+}
+
+#quem-somos a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #d96a5c;
+    color: #fff;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 14px;
+}

@@ -1,0 +1,37 @@
+/* Header ----------------------------------------------------------------------- */
+.header-bg {
+    background-color: #D3F1FB;
+}
+
+.header-bg img{
+    width: 160px;
+    height: 160px;
+}
+
+.header {
+    /* background-color: rgb(214, 222, 98); */
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-menu a {
+    color: inherit;
+    padding: 16px 4px;
+}
+
+.header-menu a:hover {
+    color: #F7366C;
+}
+
