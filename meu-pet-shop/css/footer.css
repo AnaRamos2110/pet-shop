@@ -1,0 +1,125 @@
+/* --------------------------------------------------------------------
+   FOOTER - ESTRUTURA GERAL
+   -------------------------------------------------------------------- */
+
+/* Footer inteiro */
+#footer {
+    background-color: #dff3fb;      /* Fundo azul claro do footer */
+    padding: 50px 0 20px;           /* Espaçamento superior e inferior */
+    font-family: poppins, serif;
+}
+
+/* Container principal das colunas */
+.footer-container {
+    max-width: 1100px;              /* Limita a largura */
+    margin: 0 auto;                 /* Centraliza */
+    display: grid;                  /* Usa grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
+    align-items: start;             /* Alinha no topo */
+}
+
+/*------------------------------------------------------------------------------
+   COLUNA 1 - LOGO
+  ------------------------------------------------------------------------------ */
+
+.footer-logo img {
+    max-width: 120px;               /* Tamanho máximo da logo */
+}
+
+/*------------------------------------------------------------------------------
+   COLUNA 2 - CONTATOS
+  ------------------------------------------------------------------------------ */
+
+.footer-contato h4,
+.footer-redes h4 {
+    font-size: 16px;                /* Tamanho do título */
+    margin-bottom: 15px;            /* Espaço abaixo */
+}
+
+/* Lista de contatos */
+.footer-contato ul {
+    list-style: none;               /* Remove marcadores */
+    padding: 0;
+    display: flex;                  /* Organiza em coluna */
+    flex-direction: column;
+    gap: 12px;                      /* Espaçamento entre itens */
+}
+
+/* Cada item da lista */
+.footer-contato li {
+    display: flex;                  /* Ícone + texto lado a lado */
+    align-items: flex-start;        /* Alinha pelo topo */
+    gap: 10px;                      /* Espaço entre ícone e texto */
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Ícones dos contatos */
+.footer-contato img {
+    width: 16px;
+    margin-top: 2px;                /* Ajuste visual vertical */
+}
+
+/*------------------------------------------------------------------------------
+   COLUNA 3 - REDES SOCIAIS
+  ------------------------------------------------------------------------------ */
+
+/* Lista de redes */
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;                  /* Ícones em linha */
+    gap: 15px;
+}
+
+/* Ícones das redes */
+.footer-redes img {
+    width: 28px;
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+/* Hover nos ícones */
+.footer-redes a:hover img {
+    transform: scale(1.1);
+}
+
+/*------------------------------------------------------------------------------
+   LINHA FINAL
+  ------------------------------------------------------------------------------ */
+
+.footer-bottom {
+    margin-top: 40px;               /* Espaço acima */
+    text-align: center;             /* Centraliza o texto */
+    font-size: 13px;
+}
+
+/*------------------------------------------------------------------------------
+   FOOTER - RESPONSIVO (MOBILE)
+   -------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    /* Container do footer passa a ter uma coluna */
+    .footer-container {
+        grid-template-columns: 1fr;     /* Uma coluna apenas */
+        gap: 30px;                      /* Espaço entre os blocos */
+        text-align: center;             /* Centraliza textos */
+    }
+
+    /* Centraliza a logo */
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Lista de contatos centralizada */
+    .footer-contato ul {
+        align-items: center;            /* Centraliza os itens */
+    }
+
+    /* Ajusta cada item de contato */
+    .footer-contato li {
+        justify-content: center;        /* Centraliza ícone + texto*/ 
+    }
+
+}
