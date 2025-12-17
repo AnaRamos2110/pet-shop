@@ -100,6 +100,7 @@
 @media (max-width: 768px) {
 
     /* Container do footer passa a ter uma coluna */
+    
     .footer-container {
         grid-template-columns: 1fr;     /* Uma coluna apenas */
         gap: 30px;                      /* Espaço entre os blocos */
@@ -107,19 +108,32 @@
     }
 
     /* Centraliza a logo */
+    
     .footer-logo {
         display: flex;
         justify-content: center;
     }
 
     /* Lista de contatos centralizada */
+    
     .footer-contato ul {
         align-items: center;            /* Centraliza os itens */
     }
 
     /* Ajusta cada item de contato */
+    
     .footer-contato li {
         justify-content: center;        /* Centraliza ícone + texto*/ 
     }
 
-}
+
+    /* Para as logos de redes */
+
+    .footer-redes {
+        display:flex;
+        justify-content:center ;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ }

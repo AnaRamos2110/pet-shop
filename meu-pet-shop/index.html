@@ -7,6 +7,7 @@
     <title>Pet Au-Au</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="javascript/script.js" defer></script>
+    <script src="javascript/menu-hamburger.js" defer></script>
     <!-- Poppins -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,17 +20,31 @@
 </head>
 
 <body>
+    <div class="menu-container">
+		<div class="hamburger" onclick="toggleMenu()"> <!--☰-->
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="menu fonte-p400" id="menu">
+			<li><a href="#quemsomos">a</a></li>
+			<li><a href="#produtos">Serviços</a></li>
+			<li><a href="#parceiros">Produtos</a></li>
+			<li><a href="#contato">Contato</a></li>
+		</ul>
+	</div>
+
     <!-- CABEÇALHO---------------------------------------- -->
-    <header class="header-bg c400">
+    <header class="header-bg p400">
         <div class="header">
             <img src="imagens/logo.png" alt="">
             <p>Tudo que seu pet precisa, <br> com muito carinho <br> e au-au! </p>
             <nav aria-label="primaria"> <!--Aria label é voltada para a parte de acessibilidade.-->
-                <ul class="header-menu">
+                <ul class="header-menu ">
                     <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#categorias">Produtos</a></li>
                     <li><a href="#">Dicas</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#footer">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,11 +55,22 @@
 
     <!-- A tag semântica <main> é utilizada para definir o conteúdo principal de uma página web. Ela contém informações relacionadas diretamente ao tema central da página e deve ser única, não repetindo o conteúdo em outras seções.------------------------------- -->
 
-    <main id="introducao">
-        <div class="container">
-            <img src="imagens/img-main-.png" alt="">
+    <main id="introducao" >
+    <div class="container">
+        <div class="banner active">
+            <img src="imagens/img-main-.png" alt="img1">  
         </div>
-    </main>
+        
+        <div class="banner">
+            <img src="imagens/img2.png" alt="img2">
+        </div>
+        
+        <div class="banner">
+            <img src="imagens/img3.png" alt="img3">
+        </div>
+    </div>
+    
+</main>
 
     <!-- FIM DA MAIN-------------------------------------->
 
@@ -96,7 +122,7 @@
 
 <h2 id="titulo1">Tudo que seu pet precisa</h2>
 
-<ul class="categorias">
+<ul class="categorias" id="categorias">
     <li class="caes">
         <img src="imagens/caes.png" alt="Cães">
         <span>Cães</span>
@@ -219,7 +245,7 @@
 
         <!-- COLUNA 3 - REDES SOCIAIS -->
         <div class="footer-redes">
-            <h4>Nossas redes sociais</h4>
+            <h4 class="titulo3">Nossas redes sociais</h4>
 
             <ul>
                 <li>

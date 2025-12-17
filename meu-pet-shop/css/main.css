@@ -1,0 +1,34 @@
+.banner.active{
+    opacity: 1; /* container ativo é mostrado */
+}
+
+.banner{
+    opacity: 0;
+    position: absolute;
+    
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 420px) {
+
+    /* Limita o tamanho do banner */
+    .banner {
+        max-width: 420px;        /* Largura máxima no mobile */
+        width: 100%;
+        margin: 0 auto;          /* Centraliza */
+    }
+
+    /* Faz a imagem aparecer inteira */
+    .banner img {
+        width: 100%;
+        height: auto;            /* Mantém proporção */
+        object-fit: contain;     /* Mostra a imagem inteira */
+        display: block;
+    }
+
+}
