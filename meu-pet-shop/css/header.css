@@ -42,15 +42,15 @@
 
 @media (max-width:690px){
 
-/* para esconder o meu menu tradicional-----------------------------------------------------*/
-/* Esconde a navegação padrão do cabeçalho */
+/* Comando de css para ocultare menu web!!----------------------------------------------------------------------*/
+
 .header nav {
   display: none;
 }
 
 /* Container principal do menu hamburguer */
-.menu-container {
-  display: block; /* Garante que o container seja exibido como bloco */
+.menu_hamburger {
+  display: block; /* Transforma o container em bloco */
   position: relative; /* Permite posicionar o menu dropdown em relação a este container */
 }
 

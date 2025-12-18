@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <div class="menu-container">
+    <!--Criando o menu hamburger para a versão mobile-->
+    <div class="menu_hamburger">
 		<div class="hamburger" onclick="toggleMenu()"> <!--☰-->
 			<span></span>
 			<span></span>
@@ -29,7 +30,7 @@
 		<ul class="menu fonte-p400" id="menu">
 			<li><a href="#quemsomos">a</a></li>
 			<li><a href="#produtos">Serviços</a></li>
-			<li><a href="#parceiros">Produtos</a></li>
+			<li><a href="#dicas">Dicas</a></li>
 			<li><a href="#contato">Contato</a></li>
 		</ul>
 	</div>
@@ -40,7 +41,7 @@
             <img src="imagens/logo.png" alt="">
             <p>Tudo que seu pet precisa, <br> com muito carinho <br> e au-au! </p>
             <nav aria-label="primaria"> <!--Aria label é voltada para a parte de acessibilidade.-->
-                <ul class="header-menu ">
+                <ul class="header-menu "> <!--Para a versão web-->
                     <li><a href="#">Quem somos</a></li>
                     <li><a href="#categorias">Produtos</a></li>
                     <li><a href="#">Dicas</a></li>
@@ -52,7 +53,8 @@
     </header>
 
     <!-- FIM DO CABEÇALHO------------------------------------------>
-
+    <!--Acima foi criado a parte inicial do menu da nossa aplicação! --As tags semanticas header & nav ajudam tanto na parte de estilização e interação do nosso site -->
+   
     <!-- A tag semântica <main> é utilizada para definir o conteúdo principal de uma página web. Ela contém informações relacionadas diretamente ao tema central da página e deve ser única, não repetindo o conteúdo em outras seções.------------------------------- -->
 
     <main id="introducao" >
@@ -82,15 +84,15 @@
             <!-- vantagens options vai englobar 3 divs (quadrados); -->
             <div class="vantagens_options p400">
                 <div class="vp1">
-                    <img src="imagens/icone-frete.png" alt="">
+                    <img src="imagens/icone-frete.png" alt="img do frete">
                     <p>Frete grátis</p>
                 </div>
                 <div class="vp2">
-                    <img src="imagens/icone-desconto.png" alt="">
+                    <img src="imagens/icone-desconto.png" alt="img de desconto">
                     <p>Descontos e cashback</p>
                 </div>
                 <div class="vp3">
-                    <img src="imagens/icone-pet-taxi.png" alt="">
+                    <img src="imagens/icone-pet-taxi.png" alt="taxi-pet">
                     <p>Pet táxi</p>
                 </div>
 <!--------FECHANDO AS 3 DIVS---------------------------->
@@ -98,6 +100,8 @@
         </div>
         
 </section>
+
+<!--Criando a section e inciando a nossa grade que vai integrar com partes do menu, Quando o botão "Quem somos" é clicado, a gente chama a parte esquerda da grade e em atendimento voce é direcionado para uma nova página;-->
 
 <section id="quem-somos">
     <div class="quem-somos">
@@ -120,6 +124,7 @@
     </div>
 </section>
 
+<!--Criando o titulo antes do menu-->
 <h2 id="titulo1">Tudo que seu pet precisa</h2>
 
 <ul class="categorias" id="categorias">
@@ -159,7 +164,7 @@
 <section id="contato">
     <div class="contato-container">
 
-        <!-- COLUNA ESQUERDA -->
+        <!-- COLUNA ESQUERDA o endereço da loja feito em uma lista -->
         <div class="contato-info">
             <h3>Loja online</h3>
 
@@ -181,7 +186,7 @@
             </ul>
         </div>
 
-        <!-- COLUNA DIREITA -->
+        <!-- COLUNA DIREITA que gera o formulário-->
         <div class="contato-form">
             <form>
 
@@ -270,8 +275,8 @@
 
     </div>
 
-    <!-- LINHA FINAL -->
-    <div class="footer-bottom">
+    <!-- LINHA FINAL  (Optei por algo simples)-->
+    <div class="footer-bottom"
         <p>Pet AuAu - Todos os direitos reservados.</p>
     </div>
 </footer>
