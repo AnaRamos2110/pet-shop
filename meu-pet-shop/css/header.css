@@ -49,10 +49,10 @@
 }
 
 /* Container principal do menu hamburguer */
-.menu_hamburger {
-  display: block; /* Transforma o container em bloco */
-  position: relative; /* Permite posicionar o menu dropdown em relação a este container */
-}
+/*.menu_hamburger {
+  display: block; /* Transforma o container em bloco 
+  position: relative; /* Permite posicionar o menu dropdown em relação a este container 
+}*/
 
 /* Estilização do botão hamburguer */
 .hamburger {
